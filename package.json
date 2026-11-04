@@ -1,0 +1,20 @@
+{
+  "name": "surname-match",
+  "version": "1.0.0",
+  "description": "Tolerant surname matching against an official registry: accepts joined forms (D'ANGELO = DANGELO), rejects typos.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
