@@ -44,7 +44,7 @@ export function normalize(input: string): string {
 export function tokens(input: string): string[] {
   return normalize(input)
     .split(SEPARATORS)
-    .filter((t) => t.length > 0);
+    .filter((t) => t.length > 1);
 }
 
 /** The surname with every separator removed: "SAN MARTIN" -> "SANMARTIN". */
